@@ -1,10 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 
 import html2canvas from "html2canvas";
-import ReactTooltip from "react-tooltip";
-
+import { Tooltip as ReactTooltip } from "react-tooltip";
 import Message from "../../components/chatroom/Message";
-import "../../../styles/App.css";
+import "../../../App.css";
 import { requestFullScreen } from "../../../utils/requestFullScreen.js";
 import { saveAs } from "../../../utils/saveAs";
 
