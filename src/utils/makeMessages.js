@@ -1,5 +1,5 @@
 function datify(dateStr) {
-  // [08/06/19, 10:38:42 PM]
+  // [08/06/19, 10:38:42 PM] Date Example
   let day = parseInt(dateStr.substring(1, 3));
   let month = parseInt(dateStr.substring(4, 6));
   let year = 2000 + parseInt(dateStr.substring(7, 9));
@@ -24,12 +24,12 @@ export function makeMessages(text) {
   for (const message of messages) {
     arr.push([message[0], message.index, message.index + message[0].length]);
   }
-  arr.push(["", `${text.length}`, 0]);
+  arr.push(["", text.length, 0]);
   let messagesArr = [];
 
   let day = new Date();
 
-  for (let i = 1; i < arr.length; i++) {
+  for (var i = 1; i < arr.length; ++i) {
     let message = text.substring(arr[i - 1][2], arr[i][1]);
     let idx = message.indexOf(":");
     let senderValue = false;
@@ -39,18 +39,19 @@ export function makeMessages(text) {
       message = message.substring(idx + 2);
     }
 
+    // ADD DATE BAENNER
     let thisMessageDay = arr[i - 1][0].substring(1, 9);
     if (thisMessageDay !== day) {
-      day = thisMessageDay;
       messagesArr.push({
         timestamp: thisMessageDay,
         messageBody: thisMessageDay,
         sendersName: false,
       });
+      day = thisMessageDay;
     }
 
     messagesArr.push({
-      timestamp: datify[i - 1][0],
+      timestamp: datify(arr[i - 1][0]),
       messageBody: message,
       sendersName: senderValue,
     });
