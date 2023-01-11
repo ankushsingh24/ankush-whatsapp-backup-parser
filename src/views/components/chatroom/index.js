@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import "react-tooltip/dist/react-tooltip.css";
 
 import html2canvas from "html2canvas";
 import { Tooltip as ReactTooltip } from "react-tooltip";
@@ -145,12 +146,13 @@ function ChatRoom({ content, sender, setModalState }) {
               place={"bottom"}
               effect={"solid"}
               type={theme === "light" ? "dark" : "light"}
+              content={"Set Sender"}
             >
-              Set Sender
+              {/* Set Sender */}
             </ReactTooltip>
           </button>
 
-          <h4 style={styles.h4}>Whatsapp Chat</h4>
+          <h4 style={styles.h4}>Ankush Chat</h4>
         </div>
         <div style={styles.utilityButtons}>
           <button style={styles.utilityButton} className={"ripple"}>
@@ -167,6 +169,7 @@ function ChatRoom({ content, sender, setModalState }) {
               place={"bottom"}
               effect={"solid"}
               type={theme === "light" ? "dark" : "light"}
+              content={"Take ScreenShot"}
             >
               Take ScreenShot
             </ReactTooltip>
