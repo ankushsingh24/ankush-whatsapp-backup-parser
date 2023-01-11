@@ -226,7 +226,7 @@ function Home() {
             Ankush
           </a>
         </div>
-        <a href="https://github.com/ankushsingh24/ankush-whatsapp-backup-parser">
+        <a href="https://github.com/ankushsingh24/">
           <img src={githubIcon} style={styles.githubIcon} alt="" />
         </a>
       </footer>
