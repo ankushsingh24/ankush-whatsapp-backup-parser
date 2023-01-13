@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+<h1 align="center">WhatsApp Backup Parser</h1> 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This react project is a solution to one of the problems people face with Whatsapp. If you have an exported Whatsapp Chat as a text file, you had to view it in the text format only which could be really exasparating especially when their are tons of messages and have to be accesed frequently. 
+The solution is to take such a text file and present it in an interface similar to that of the Whatsapp. So if you have any Whatsapp Exported Chat as a txt file then you could now conviniently access it as if you were looking at it in Whatsapp itself. 
 
-## Available Scripts
+## Following are the current features of this Whatsapp Backup Parser:
+- [x] Selection of sender for a chat by the user.
+- [x] Selection of sender for a chat by the user.
+- [x] Fullscreen Mode.
+- [x] Screenshot Function.
+- [x] Dark Mode.
+- [x] Classifies message as sent, recieved or group vital.
+- [x] Text formatting support (Bold, Italic and Strikethrough).
+- [x] Clickable hyperlinks.
+- [x] Date banners.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Screenshots
+<table>
+  <tr>
+    <td colspan=2><img src='https://user-images.githubusercontent.com/83535682/212432396-076311ae-3444-42c8-81b8-dab9b812b20c.png' /></td>
+  </tr>
+  <tr>
+    <td>Custom sender select<img src='https://user-images.githubusercontent.com/83535682/212432693-d86c065a-d561-41cd-81ef-fb7531bd3317.png' /></td>
+    <td>Chat Room Standard View<img src='https://user-images.githubusercontent.com/83535682/212432854-7d64b861-f86d-4853-8640-909f014bbce8.png' /></td>
+  </tr>
+  <tr>
+    <td>Dark Mode and Fullscreen<img src='https://user-images.githubusercontent.com/83535682/212433230-d3dd8996-5f55-4960-9da9-5cf2534c86a6.png' /></td>
+    <td>Screenshot<img src='https://user-images.githubusercontent.com/83535682/212433814-450814b7-d2d8-49b6-831e-c676e21520c2.png' /></td>
+  </tr>
+</table>
